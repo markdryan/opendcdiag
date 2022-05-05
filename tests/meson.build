@@ -141,13 +141,13 @@ if host_machine.cpu_family() == 'x86_64'
 			tests_common_incdirs,
 		],
 		c_args : [
-			tests_common_c_args,
 			'-march=skylake-avx512',
+			tests_common_c_args,
 		],
 		cpp_args : [
-			tests_common_cpp_args,
 			'-march=skylake-avx512',
 			'-DEigen=EigenAVX512',
+			tests_common_cpp_args,
 		],
 	)
 
